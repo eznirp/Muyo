@@ -24,17 +24,16 @@ const HomePage = () => {
           </div>
 
           <div className="group relative overflow-hidden rounded-3xl border-2 border-zinc-300 bg-zinc-100 p-6 transition-all hover:border-zinc-400 hover:shadow-lg">
-            <div className="aspect-video overflow-hidden rounded-[1.25rem] bg-gradient-to-br from-zinc-200 to-zinc-300">
+            <div className="aspect-video overflow-hidden rounded-[1.25rem] bg-zinc-200">
               <div className="flex h-full items-center justify-center">
                 <div className="grid grid-cols-2 gap-3">
-                  <div className="h-16 w-16 rounded-xl bg-gradient-to-br from-blue-500 to-blue-600 shadow-md"></div>
-                  <div className="h-16 w-16 rounded-xl bg-gradient-to-br from-purple-500 to-purple-600 shadow-md"></div>
-                  <div className="h-16 w-16 rounded-xl bg-gradient-to-br from-green-500 to-green-600 shadow-md"></div>
-                  <div className="h-16 w-16 rounded-xl bg-gradient-to-br from-orange-500 to-orange-600 shadow-md"></div>
+                  <div className="h-16 w-16 rounded-xl bg-zinc-300"></div>
+                  <div className="h-16 w-16 rounded-xl bg-zinc-300"></div>
+                  <div className="h-16 w-16 rounded-xl bg-zinc-300"></div>
+                  <div className="h-16 w-16 rounded-xl bg-zinc-300"></div>
                 </div>
               </div>
             </div>
-            <div className="absolute inset-0 bg-gradient-to-t from-transparent to-zinc-100/20 opacity-0 transition-opacity group-hover:opacity-100"></div>
           </div>
         </div>
       </section>
@@ -48,39 +47,27 @@ const HomePage = () => {
         </div>
 
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-          <div className="group rounded-3xl border-2 border-zinc-900 bg-zinc-100 p-5 transition-all hover:border-zinc-700 hover:shadow-lg">
-            <div className="flex items-center justify-between mb-2">
-              <p className="text-2xl font-bold text-zinc-900">12</p>
-              <div className="h-2 w-2 rounded-full bg-green-500"></div>
-            </div>
-            <p className="text-[11px] font-semibold uppercase tracking-[0.24em] text-zinc-500">
+          <div className="rounded-3xl border-2 border-zinc-900 bg-zinc-100 p-5">
+            <p className="text-2xl font-bold text-zinc-900">12</p>
+            <p className="mt-2 text-[11px] font-semibold uppercase tracking-[0.24em] text-zinc-500">
               Projects Completed
             </p>
           </div>
-          <div className="group rounded-3xl border-2 border-zinc-900 bg-zinc-100 p-5 transition-all hover:border-zinc-700 hover:shadow-lg">
-            <div className="flex items-center justify-between mb-2">
-              <p className="text-2xl font-bold text-zinc-900">08</p>
-              <div className="h-2 w-2 rounded-full bg-blue-500"></div>
-            </div>
-            <p className="text-[11px] font-semibold uppercase tracking-[0.24em] text-zinc-500">
+          <div className="rounded-3xl border-2 border-zinc-900 bg-zinc-100 p-5">
+            <p className="text-2xl font-bold text-zinc-900">08</p>
+            <p className="mt-2 text-[11px] font-semibold uppercase tracking-[0.24em] text-zinc-500">
               Core Sections
             </p>
           </div>
-          <div className="group rounded-3xl border-2 border-zinc-900 bg-zinc-100 p-5 transition-all hover:border-zinc-700 hover:shadow-lg">
-            <div className="flex items-center justify-between mb-2">
-              <p className="text-2xl font-bold text-zinc-900">24</p>
-              <div className="h-2 w-2 rounded-full bg-purple-500"></div>
-            </div>
-            <p className="text-[11px] font-semibold uppercase tracking-[0.24em] text-zinc-500">
+          <div className="rounded-3xl border-2 border-zinc-900 bg-zinc-100 p-5">
+            <p className="text-2xl font-bold text-zinc-900">24</p>
+            <p className="mt-2 text-[11px] font-semibold uppercase tracking-[0.24em] text-zinc-500">
               Screen Designs
             </p>
           </div>
-          <div className="group rounded-3xl border-2 border-zinc-900 bg-zinc-100 p-5 transition-all hover:border-zinc-700 hover:shadow-lg">
-            <div className="flex items-center justify-between mb-2">
-              <p className="text-2xl font-bold text-zinc-900">04</p>
-              <div className="h-2 w-2 rounded-full bg-orange-500"></div>
-            </div>
-            <p className="text-[11px] font-semibold uppercase tracking-[0.24em] text-zinc-500">
+          <div className="rounded-3xl border-2 border-zinc-900 bg-zinc-100 p-5">
+            <p className="text-2xl font-bold text-zinc-900">04</p>
+            <p className="mt-2 text-[11px] font-semibold uppercase tracking-[0.24em] text-zinc-500">
               Layout Templates
             </p>
           </div>
@@ -96,9 +83,9 @@ const HomePage = () => {
         </div>
 
         <div className="grid gap-4 md:grid-cols-3">
-          <article className="group rounded-3xl border-2 border-zinc-900 bg-zinc-100 p-4 transition-all hover:border-zinc-700 hover:shadow-lg">
-            <div className="flex aspect-4/3 items-center justify-center rounded-[1.25rem] bg-gradient-to-br from-blue-100 to-blue-200">
-              <div className="h-12 w-12 rounded-full border-2 border-blue-300 bg-blue-100" />
+          <article className="rounded-3xl border-2 border-zinc-900 bg-zinc-100 p-4">
+            <div className="flex aspect-4/3 items-center justify-center rounded-[1.25rem] bg-zinc-200">
+              <div className="h-12 w-12 rounded-full border-2 border-zinc-300 bg-zinc-100" />
             </div>
             <h3 className="mt-4 text-lg font-semibold text-zinc-900">Responsive Design</h3>
             <p className="mt-3 text-sm leading-6 text-zinc-600">
@@ -107,9 +94,9 @@ const HomePage = () => {
             <Button className="mt-4" variant="primary">View More</Button>
           </article>
 
-          <article className="group rounded-3xl border-2 border-zinc-900 bg-zinc-100 p-4 transition-all hover:border-zinc-700 hover:shadow-lg">
-            <div className="flex aspect-4/3 items-center justify-center rounded-[1.25rem] bg-gradient-to-br from-green-100 to-green-200">
-              <div className="h-12 w-12 rounded-full border-2 border-green-300 bg-green-100" />
+          <article className="rounded-3xl border-2 border-zinc-900 bg-zinc-100 p-4">
+            <div className="flex aspect-4/3 items-center justify-center rounded-[1.25rem] bg-zinc-200">
+              <div className="h-12 w-12 rounded-full border-2 border-zinc-300 bg-zinc-100" />
             </div>
             <h3 className="mt-4 text-lg font-semibold text-zinc-900">Component Library</h3>
             <p className="mt-3 text-sm leading-6 text-zinc-600">
@@ -118,9 +105,9 @@ const HomePage = () => {
             <Button className="mt-4" variant="primary">View More</Button>
           </article>
 
-          <article className="group rounded-3xl border-2 border-zinc-900 bg-zinc-100 p-4 transition-all hover:border-zinc-700 hover:shadow-lg">
-            <div className="flex aspect-4/3 items-center justify-center rounded-[1.25rem] bg-gradient-to-br from-purple-100 to-purple-200">
-              <div className="h-12 w-12 rounded-full border-2 border-purple-300 bg-purple-100" />
+          <article className="rounded-3xl border-2 border-zinc-900 bg-zinc-100 p-4">
+            <div className="flex aspect-4/3 items-center justify-center rounded-[1.25rem] bg-zinc-200">
+              <div className="h-12 w-12 rounded-full border-2 border-zinc-300 bg-zinc-100" />
             </div>
             <h3 className="mt-4 text-lg font-semibold text-zinc-900">Custom Styling</h3>
             <p className="mt-3 text-sm leading-6 text-zinc-600">

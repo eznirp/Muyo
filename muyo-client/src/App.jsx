@@ -3,6 +3,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 // HomePage Structure
 import Layout from './components/Layout';
 import ArticlePage from './pages/ArticlePage';
+import ArticlesListPage from './pages/ArticlesListPage';
 import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
 
@@ -21,6 +22,10 @@ const routes = [
       },
       {
         path: 'articles',
+        element: <ArticlesListPage />,
+      },
+      {
+        path: 'articles/:name',
         element: <ArticlePage />,
       },
     ],
