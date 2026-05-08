@@ -6,15 +6,12 @@ const AboutPage = () => {
       <section className="border-y-2 border-zinc-900 bg-zinc-50 px-4 py-6 sm:px-6 sm:py-8 lg:px-8">
         <div className="grid gap-8 lg:grid-cols-2 lg:items-center">
           <div className="group relative overflow-hidden rounded-3xl border-2 border-zinc-300 bg-zinc-100 p-6 transition-all hover:border-zinc-400 hover:shadow-lg">
-            <div className="aspect-square overflow-hidden rounded-[1.25rem] bg-gradient-to-br from-zinc-200 to-zinc-300">
-              <div className="flex h-full items-center justify-center">
-                <div className="relative">
-                  <div className="h-32 w-32 rounded-full bg-gradient-to-br from-purple-500 to-purple-600 shadow-xl"></div>
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <p className="text-white font-bold text-lg">WS</p>
-                  </div>
-                </div>
-              </div>
+            <div className="aspect-square overflow-hidden rounded-[1.25rem] bg-zinc-200">
+              <img 
+                src="/src/assets/sga.jpg" 
+                alt="Profile" 
+                className="h-full w-full object-cover"
+              />
             </div>
             <div className="absolute inset-0 bg-gradient-to-t from-transparent to-zinc-100/20 opacity-0 transition-opacity group-hover:opacity-100"></div>
           </div>

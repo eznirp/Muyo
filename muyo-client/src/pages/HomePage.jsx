@@ -25,15 +25,13 @@ const HomePage = () => {
 
           <div className="group relative overflow-hidden rounded-3xl border-2 border-zinc-300 bg-zinc-100 p-6 transition-all hover:border-zinc-400 hover:shadow-lg">
             <div className="aspect-video overflow-hidden rounded-[1.25rem] bg-zinc-200">
-              <div className="flex h-full items-center justify-center">
-                <div className="grid grid-cols-2 gap-3">
-                  <div className="h-16 w-16 rounded-xl bg-zinc-300"></div>
-                  <div className="h-16 w-16 rounded-xl bg-zinc-300"></div>
-                  <div className="h-16 w-16 rounded-xl bg-zinc-300"></div>
-                  <div className="h-16 w-16 rounded-xl bg-zinc-300"></div>
-                </div>
-              </div>
+              <img 
+                src="/src/assets/elon.jpg" 
+                alt="Hero section visual" 
+                className="h-full w-full object-cover"
+              />
             </div>
+            <div className="absolute inset-0 bg-gradient-to-t from-transparent to-zinc-100/20 opacity-0 transition-opacity group-hover:opacity-100"></div>
           </div>
         </div>
       </section>
