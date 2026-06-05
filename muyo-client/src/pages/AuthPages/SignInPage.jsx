@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import Button from '../../components/Button';
 import rbImage from '../../assets/rb.jpg';
 
@@ -6,6 +6,13 @@ const inputClasses =
   'mt-2 w-full rounded-md border border-slate-300 bg-white px-4 py-3 text-sm text-slate-900 outline-none transition placeholder:text-slate-400 focus:border-teal-600 focus:ring-2 focus:ring-teal-100';
 
 const SignInPage = () => {
+  const navigate = useNavigate();
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    navigate('/dashboard');
+  };
+
   return (
     <div className="mx-auto flex min-h-[calc(100vh-4rem)] w-full max-w-5xl items-center justify-center">
       <div className="w-full overflow-hidden rounded-lg border border-slate-200 bg-white shadow-xl shadow-slate-200/70">
@@ -29,7 +36,7 @@ const SignInPage = () => {
               <h1 className="mt-3 text-3xl font-bold text-slate-950">Sign in to continue</h1>
             </div>
 
-            <form className="space-y-5">
+            <form className="space-y-5" onSubmit={handleSubmit}>
               <div>
                 <label htmlFor="signin-email" className="block text-sm font-semibold text-slate-700">
                   Email
