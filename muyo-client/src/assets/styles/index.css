@@ -50,3 +50,23 @@ input {
   background: #99f6e4;
   color: #134e4a;
 }
+
+@media print {
+  body {
+    background: #ffffff;
+  }
+
+  .dashboard-header,
+  .dashboard-sidebar {
+    display: none;
+  }
+
+  .dashboard-main {
+    padding: 0;
+  }
+
+  .print-report {
+    color: #0f172a;
+    width: 100%;
+  }
+}
