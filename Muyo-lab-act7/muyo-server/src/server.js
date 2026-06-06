@@ -99,5 +99,12 @@ const startServer = (port = PORT) => {
   });
 };
 
-await connectMongoDB();
-startServer();
+// For Vercel, we export the app
+// In production, Vercel handles the HTTP server
+// In development, we run the server locally
+if (process.env.NODE_ENV !== 'production') {
+  await connectMongoDB();
+  startServer();
+}
+
+export default app;
