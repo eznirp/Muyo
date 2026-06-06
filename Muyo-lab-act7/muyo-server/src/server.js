@@ -121,8 +121,15 @@ const startServer = (port = PORT) => {
 // For Vercel, we export the app
 // In production, Vercel handles the HTTP server
 // In development, we run the server locally
-if (process.env.NODE_ENV !== 'production') {
+
+// Always connect to MongoDB (needed for both production and development)
+if (!process.env.MONGODB_URI) {
+  console.warn('MONGODB_URI not set, MongoDB connection will be attempted when needed');
+} else {
   await connectMongoDB();
+}
+
+if (process.env.NODE_ENV !== 'production') {
   startServer();
 }
 
