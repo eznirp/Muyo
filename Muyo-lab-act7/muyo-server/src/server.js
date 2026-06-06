@@ -24,8 +24,25 @@ console.log('- MONGODB_URI configured:', Boolean(MONGODB_URI));
 console.log('- Node version:', process.version);
 console.log('- Using DNS: 8.8.8.8, 8.8.4.4');
 
-app.use(cors());
+// CORS configuration
+const corsOptions = {
+  origin: [
+    'http://localhost:3000',
+    'http://localhost:5173',
+    'https://muyo-jix1.vercel.app',
+    'https://*.vercel.app',
+  ],
+  credentials: true,
+  optionsSuccessStatus: 200,
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS', 'PATCH'],
+  allowedHeaders: ['Content-Type', 'Authorization'],
+};
+
+app.use(cors(corsOptions));
 app.use(express.json());
+
+// Preflight requests
+app.options('*', cors(corsOptions));
 
 const connectMongoDB = async () => {
   if (!MONGODB_URI) {
